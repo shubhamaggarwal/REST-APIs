@@ -1,5 +1,5 @@
 import sqlite3
-from src.db import db
+from db import db
 
 
 class UserModel(db.Model):
@@ -47,6 +47,3 @@ class UserModel(db.Model):
 
     def json(self):
         return {"username": self.username, "password": self.password}
-
-
-

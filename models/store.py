@@ -1,4 +1,4 @@
-from src.db import db
+from db import db
 
 
 class StoreModel(db.Model):
@@ -52,4 +52,3 @@ class StoreModel(db.Model):
         # self.items has become a query builder due to lazy = dynamic.
         # Until self.json() is called no ItemModel objects
         # are created for the function call.
-
